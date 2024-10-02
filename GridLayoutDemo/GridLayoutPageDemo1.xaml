@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridLayoutDemo.GridLayoutPageDemo1"
+             Title="GridLayoutPageDemo1">
+    <Grid RowDefinitions="10*,90*">
+        <Grid ColumnDefinitions="*,*,*,*">
+            <Border Grid.Column="0">
+                <Label Text="Espacio 1" VerticalOptions="Center" Margin="20,0,0,0" HorizontalTextAlignment="Center"/>
+            </Border>
+            <Border Grid.Column="1">
+                <Label Text="Espacio 2" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
+            </Border>
+            <Border Grid.Column="2">
+                <Label Text="Espacio 3" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
+            </Border>
+            <Border Grid.Column="3">
+                <Label Text="Espacio 4" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
+            </Border>
+        </Grid>
+        <!--<HorizontalStackLayout Grid.Row="0" BackgroundColor="Blue" Spacing="20">
+            <Label Text="Espacio 1" VerticalOptions="Center" Margin="20,0,0,0"/>
+            <Label Text="Espacio 2" VerticalOptions="Center"/>
+            <Label Text="Espacio 3" VerticalOptions="Center"/>
+            <Label Text="Espacio 4" VerticalOptions="Center"/>
+        </HorizontalStackLayout>-->
+
+        <!-- Segunda fila -->
+
+        <Grid Grid.Row="1" ColumnDefinitions="30*,70*">
+            <ScrollView>
+                <VerticalStackLayout >
+                    <Button Text="Boton 1" Margin="4"/>
+                    <Button Text="Boton 2" Margin="4"/>
+                    <Button Text="Boton 3" Margin="4"/>
+                    <Button Text="Boton 4" Margin="4"/>
+                    <Button Text="Boton 5" Margin="4"/>
+                    <Button Text="Boton 6" Margin="4"/>
+                    <Button Text="Boton 7" Margin="4"/>
+                    <Button Text="Boton 8" Margin="4"/>
+                    <Button Text="Boton 9" Margin="4"/>
+                    <Button Text="Boton 10" Margin="4"/>
+                    <Button Text="Boton 11" Margin="4"/>
+                    <Button Text="Boton 12" Margin="4"/>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+    </Grid>
+</ContentPage>
